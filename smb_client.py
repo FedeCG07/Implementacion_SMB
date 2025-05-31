@@ -9,12 +9,12 @@ import os
 
 #EASTER EGG
 # CHANGE THESE VALUES
-server_ip = "192.168.30.24"   # The IP address or name of the SMB server
+server_ip = "192.168.133.117"   # The IP address or name of the SMB server
 share_name = "SMB_Test"  # The name of the shared folder
 port = 445
 
 # 1. Connect to the server
-'''
+
 puntitos = ''
 for i in range(6):
     os.system('cls')
@@ -24,7 +24,6 @@ for i in range(6):
     time.sleep(1)
     if i == 2:
         puntitos = ''
-'''
 connection = Connection(port, server_ip)
 connection.connect()
 print('Conexión establecida')
@@ -32,9 +31,9 @@ time.sleep(1)
 
 # 2. Log in with a session
 os.system('cls')
-username = input('Ingrese nombre de usuario: ') #periquito
+username = input('Ingrese nombre de usuario: ')
 os.system('cls')
-password = input('Ingrese contraseña: ') #periquito
+password = input('Ingrese contraseña: ')
 session = Session(connection, username=username, password=password)
 session.connect()
 
