@@ -25,6 +25,7 @@ Pasos para crear un servidor SMB en Linux:
 - Reiniciar Samba con "sudo systemctl restart smbd" para aplicar los cambios 
 - Permitir el paso por el firewall, si es que lo hay, con "sudo ufw allow 'Samba'"
 - Obtener dirección IP con "hostname -I". Esta dirección es la que se utiliza para conectarse desde el código
+- Finalmente, cambiar de directorio con "cd" y entrar a "/srv/samba/shared", que es la carpeta comártida, de la que se veran los archivos.
 
 Pasos para poder utilizar el código:
 - Crear un python environment venv
